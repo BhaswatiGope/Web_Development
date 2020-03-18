@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Movie Review Data</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+
+<h3>Movie Review Sentiment :</h3>
+<div>{{ content }}</div>
+
+<h3>Prediction_Movie_Review:</h3>
+<div>Sentiment of this movie review is <strong>{{ prediction }}</strong>
+	 (probability: {{ probability }}%).</div>
+
+<br></br>
+
+<div id='button'>
+	  <form action="/">
+	    <input type=submit value='Submit Another Comment'>
+	  </form>
+</div>
+
+  </body>
+</html>
